@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="walk in tubs for elderly, senior bathtubs, walk in tubs elderly, hydrotherapy tubs for seniors, senior walk in tubs">
 
+  <link rel="canonical" href="https://www.walkintubsforelderly.com/">
+
   <!-- Open Graph -->
   <meta property="og:title" content="Walk In Tubs for Elderly | Senior Bathtubs & Hydrotherapy Tubs">
   <meta property="og:description" content="Walk in tubs for elderly and senior bathtubs with soothing hydrotherapy options. Family-owned Aging Safely Baths.">
@@ -15,15 +17,14 @@
 
   <style>
     :root {
-      --bg: #0b1020;
-      --bg-soft: #101426;
-      --bg-card: #151a30;
+      --bg: #050814;
+      --bg-soft: #0c1022;
+      --bg-card: #141a33;
       --bg-pill: #202743;
-      --primary: #3fd4ff;            /* bright aqua */
+      --primary: #3fd4ff;        /* bright aqua */
       --primary-soft: #c0f1ff;
-      --accent: #ff7fd8;             /* neon pink accent */
+      --accent: #ff7fd8;         /* neon pink accent */
       --accent-soft: #ffe5f6;
-      --bubble-blue: #3a6fff;
       --text: #f6f8ff;
       --muted: #a4aec9;
       --border-soft: rgba(255,255,255,0.09);
@@ -31,6 +32,7 @@
       --radius-lg: 20px;
       --radius-xl: 28px;
       --radius-pill: 999px;
+      --max-width: 1140px;
     }
 
     * {
@@ -40,7 +42,7 @@
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top left, #1c2440 0, #050814 40%, #02030a 100%);
+      background: radial-gradient(circle at top left, #1d2444 0, #050814 40%, #02030a 100%);
       color: var(--text);
       line-height: 1.7;
     }
@@ -54,48 +56,99 @@
       text-decoration: underline;
     }
 
+    /* HEADER / NAV */
     header {
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(5, 8, 20, 0.9);
+      background: rgba(5, 8, 20, 0.92);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(255,255,255,0.04);
     }
 
     .nav-inner {
-      max-width: 1140px;
+      max-width: var(--max-width);
       margin: 0 auto;
-      padding: 10px 18px;
+      padding: 8px 18px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-    }
-
-    .brand-text-line {
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: #ffffff;
-    }
-
-    .brand-subline {
-      font-size: 11px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      margin-top: 3px;
+      gap: 16px;
     }
 
     .nav-left {
       display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand-logo-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 6px;
+      border-radius: 16px;
+      background: radial-gradient(circle at 30% 20%, #ffffff 0, #bfe6ff 32%, #0b5ea8 70%, #031933 100%);
+      box-shadow: 0 8px 20px rgba(4, 35, 66, 0.7);
+    }
+
+    .brand-logo-wrap img {
+      display: block;
+      height: 34px;
+      width: auto;
+    }
+
+    .brand-text-block {
+      display: flex;
       flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .brand-text-line {
+      font-size: 17px;
+      font-weight: 750;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #ffffff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-subline {
+      font-size: 10px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    .brand-phone {
+      font-size: 13px;
+      color: var(--primary-soft);
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .brand-phone a {
+      color: var(--primary-soft);
+      text-decoration: none;
+    }
+
+    .brand-phone a:hover {
+      text-decoration: underline;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
     }
 
     .nav-links {
       display: flex;
-      gap: 14px;
+      gap: 10px;
       align-items: center;
       font-size: 13px;
     }
@@ -104,6 +157,7 @@
       padding: 6px 10px;
       border-radius: var(--radius-pill);
       color: var(--muted);
+      white-space: nowrap;
     }
 
     .nav-links a:hover {
@@ -114,7 +168,7 @@
     .nav-links a.nav-primary {
       background: linear-gradient(135deg, var(--primary), #5df3ff);
       color: #001024;
-      font-weight: 600;
+      font-weight: 650;
       box-shadow: 0 14px 30px rgba(0,0,0,0.6);
     }
 
@@ -126,10 +180,15 @@
       .nav-links {
         display: none;
       }
+
+      .brand-phone {
+        font-size: 12px;
+      }
     }
 
+    /* HERO */
     .hero-wrap {
-      max-width: 1140px;
+      max-width: var(--max-width);
       margin: 14px auto 30px auto;
       padding: 0 18px;
       position: relative;
@@ -140,6 +199,7 @@
       inset: 0;
       pointer-events: none;
       opacity: 0.55;
+      z-index: 0;
     }
 
     .bubble {
@@ -151,8 +211,10 @@
     }
 
     .bubble.b1 { width: 160px; height: 160px; top: -30px; left: -40px; }
-    .bubble.b2 { width: 100px; height: 100px; top: 140px; right: -20px; background: radial-gradient(circle at 40% 20%, rgba(255,255,255,0.9), rgba(255,127,216,0.15)); }
-    .bubble.b3 { width: 220px; height: 220px; bottom: -80px; left: 30%; background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.9), rgba(58,111,255,0.12)); }
+    .bubble.b2 { width: 110px; height: 110px; top: 120px; right: -30px;
+      background: radial-gradient(circle at 40% 20%, rgba(255,255,255,0.9), rgba(255,127,216,0.18)); }
+    .bubble.b3 { width: 220px; height: 220px; bottom: -80px; left: 26%;
+      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.9), rgba(58,111,255,0.18)); }
 
     .hero-grid {
       position: relative;
@@ -175,8 +237,8 @@
       gap: 8px;
       padding: 4px 12px;
       border-radius: var(--radius-pill);
-      background: rgba(32,39,67,0.9);
-      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(20,27,52,0.96);
+      border: 1px solid rgba(255,255,255,0.14);
       font-size: 11px;
       text-transform: uppercase;
       letter-spacing: 0.16em;
@@ -194,21 +256,24 @@
 
     .hero-title {
       font-size: clamp(28px, 4vw, 40px);
-      line-height: 1.15;
+      line-height: 1.12;
       margin: 0 0 8px 0;
       color: #ffffff;
+      font-weight: 750;
     }
 
     .hero-title span.highlight {
       background-image: linear-gradient(120deg, var(--primary), var(--accent));
       -webkit-background-clip: text;
       color: transparent;
+      font-weight: 800;
     }
 
     .hero-text {
       font-size: 15px;
       color: var(--muted);
       max-width: 640px;
+      font-weight: 400;
     }
 
     .hero-cta-row {
@@ -226,7 +291,7 @@
       border-radius: var(--radius-pill);
       padding: 11px 22px;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 650;
       border: none;
       cursor: pointer;
       color: #001017;
@@ -261,8 +326,9 @@
       padding: 8px 16px;
       font-size: 13px;
       color: var(--primary-soft);
-      background: rgba(11,16,32,0.85);
+      background: rgba(11,16,32,0.9);
       text-decoration: none;
+      font-weight: 500;
     }
 
     .hero-trust {
@@ -276,6 +342,7 @@
 
     .hero-trust strong {
       color: var(--primary-soft);
+      font-weight: 600;
     }
 
     .chip-row {
@@ -287,7 +354,7 @@
     .chip {
       border-radius: var(--radius-pill);
       padding: 4px 10px;
-      background: rgba(21,26,48,0.9);
+      background: rgba(21,26,48,0.95);
       border: 1px solid rgba(255,255,255,0.10);
       font-size: 11px;
       display: inline-flex;
@@ -344,6 +411,7 @@
     .hero-caption strong {
       color: #ffffff;
       font-size: 12px;
+      font-weight: 600;
     }
 
     .hero-stats {
@@ -354,7 +422,7 @@
     }
 
     .hero-stat-pill {
-      background: rgba(21,26,48,0.9);
+      background: rgba(21,26,48,0.96);
       border-radius: 14px;
       padding: 8px 9px;
       border: 1px solid rgba(255,255,255,0.12);
@@ -364,6 +432,7 @@
       display: block;
       color: var(--primary-soft);
       font-size: 14px;
+      font-weight: 650;
     }
 
     @media (max-width: 900px) {
@@ -372,8 +441,9 @@
       }
     }
 
+    /* PAGE LAYOUT */
     main {
-      max-width: 1140px;
+      max-width: var(--max-width);
       margin: 0 auto 60px auto;
       padding: 0 18px 40px 18px;
     }
@@ -394,12 +464,14 @@
       margin: 0;
       font-size: 22px;
       color: #ffffff;
+      font-weight: 700;
     }
 
     .section-tagline {
       font-size: 13px;
       color: var(--muted);
       max-width: 420px;
+      font-weight: 400;
     }
 
     .columns {
@@ -428,12 +500,14 @@
       margin-bottom: 8px;
       font-size: 17px;
       color: #ffffff;
+      font-weight: 650;
     }
 
     .card p {
       margin: 0 0 8px 0;
       font-size: 14px;
       color: var(--muted);
+      font-weight: 400;
     }
 
     .card-tag {
@@ -442,6 +516,7 @@
       text-transform: uppercase;
       letter-spacing: 0.16em;
       margin-bottom: 4px;
+      font-weight: 500;
     }
 
     .card-list {
@@ -451,11 +526,15 @@
       color: var(--muted);
     }
 
+    .card-list li {
+      margin-bottom: 4px;
+    }
+
     .strip {
       margin-top: 18px;
       padding: 16px;
       border-radius: var(--radius-xl);
-      background: radial-gradient(circle at top left, rgba(63,212,255,0.12), rgba(11,16,32,0.96));
+      background: radial-gradient(circle at top left, rgba(63,212,255,0.14), rgba(11,16,32,0.96));
       border: 1px solid rgba(255,255,255,0.12);
       box-shadow: 0 18px 40px rgba(0,0,0,0.5);
     }
@@ -465,6 +544,7 @@
       margin-bottom: 8px;
       font-size: 17px;
       color: #ffffff;
+      font-weight: 650;
     }
 
     .strip p {
@@ -487,7 +567,7 @@
     }
 
     .tip {
-      background: rgba(21,26,48,0.92);
+      background: rgba(21,26,48,0.95);
       border-radius: 16px;
       padding: 10px 11px;
       border: 1px solid rgba(255,255,255,0.12);
@@ -499,6 +579,7 @@
       display: block;
       margin-bottom: 4px;
       color: var(--primary-soft);
+      font-weight: 600;
     }
 
     .compare-table {
@@ -531,6 +612,7 @@
       font-size: 12px;
       color: var(--muted);
       margin-top: 6px;
+      font-style: italic;
     }
 
     .two-col {
@@ -590,6 +672,7 @@
       margin: 0 0 6px 0;
       font-size: 14px;
       color: #ffffff;
+      font-weight: 650;
     }
 
     .blog-preview {
@@ -625,6 +708,7 @@
       margin: 0 0 6px 0;
       font-size: 16px;
       color: #ffffff;
+      font-weight: 650;
     }
 
     .blog-card a.read-link {
@@ -657,6 +741,7 @@
       margin: 0 0 8px 0;
       font-size: 22px;
       color: #ffffff;
+      font-weight: 700;
     }
 
     .cta-band p {
@@ -670,6 +755,10 @@
       padding: 0;
       font-size: 13px;
       color: var(--muted);
+    }
+
+    .cta-list li {
+      margin-bottom: 4px;
     }
 
     .cta-mini {
@@ -690,6 +779,7 @@
       margin-bottom: 6px;
       font-size: 15px;
       color: #ffffff;
+      font-weight: 650;
     }
 
     .form-row {
@@ -738,15 +828,64 @@
       margin-top: 4px;
     }
 
+    /* FOOTER */
     footer {
       border-top: 1px solid rgba(255,255,255,0.12);
       background: #050814;
-      padding: 18px;
+      padding: 20px 18px 26px 18px;
       font-size: 11px;
       color: var(--muted);
     }
 
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1.1fr);
+      gap: 18px;
+      margin-bottom: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-title {
+      font-size: 12px;
+      color: #ffffff;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .footer-links,
+    .footer-locations {
+      list-style: none;
+      padding: 0;
+      margin: 4px 0 0 0;
+    }
+
+    .footer-links li,
+    .footer-locations li {
+      margin-bottom: 3px;
+    }
+
     footer a {
+      color: var(--primary-soft);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 8px;
+      margin-top: 6px;
+      text-align: left;
+    }
+
+    .footer-bottom a {
       color: var(--primary-soft);
     }
   </style>
@@ -788,18 +927,28 @@
 <header>
   <div class="nav-inner">
     <div class="nav-left">
-      <div class="brand-text-line">WalkInTubsForElderly.com</div>
-      <div class="brand-subline">Aging Safely Baths • Family-Owned Since 2012</div>
+      <div class="brand-logo-wrap">
+        <img src="https://www.agingsafelybaths.com/wp-content/uploads/2025/06/logo-364-112.png" alt="Aging Safely Baths logo">
+      </div>
+      <div class="brand-text-block">
+        <div class="brand-text-line">WalkInTubsForElderly.com</div>
+        <div class="brand-subline">Aging Safely Baths • Family-Owned Since 2012</div>
+        <div class="brand-phone">
+          Toll Free: <a href="tel:1-888-779-2284">1-888-779-2284</a>
+        </div>
+      </div>
     </div>
-    <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#why">Why Walk In Tubs</a>
-      <a href="#hydrotherapy">Hydrotherapy Benefits</a>
-      <a href="#planning">Planning & Tips</a>
-      <a href="#faq">FAQ</a>
-      <a href="#blog">Blog</a>
-      <a href="#contact" class="nav-primary">Call 1-888-779-2284</a>
-    </nav>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#why">Why Walk In Tubs</a>
+        <a href="#hydrotherapy">Hydrotherapy</a>
+        <a href="#planning">Planning</a>
+        <a href="#faq">FAQ</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact" class="nav-primary">Free tub info</a>
+      </nav>
+    </div>
   </div>
 </header>
 
@@ -892,7 +1041,7 @@
     <div class="section-header">
       <h2>Why walk in tubs for elderly can change the feel of everyday bathing</h2>
       <div class="section-tagline">
-        Walk in tubs for elderly are not just about getting in and out. They are about reducing stress, 
+        Walk in tubs for elderly are not just about getting in and out. They are about reducing stress,
         supporting independence and turning bath time back into something to look forward to.
       </div>
     </div>
@@ -934,7 +1083,8 @@
             <li>Fewer last-second catches when someone slips or loses balance.</li>
           </ul>
           <p class="mini-note">
-            We cannot eliminate all risk, and no product can promise to prevent falls, but thoughtful design may help reduce the likelihood of a rushed or unstable movement.
+            We cannot eliminate all risk, and no product can promise to prevent falls,
+            but thoughtful design may help reduce the likelihood of a rushed or unstable movement.
           </p>
         </div>
       </div>
@@ -974,7 +1124,8 @@
     <div class="section-header">
       <h2>Hydrotherapy walk in tubs for elderly: warmth, comfort and calm</h2>
       <div class="section-tagline">
-        Warm water, gentle jets and comfortable seating may help support circulation, ease stiffness and create a calmer end-of-day routine for many seniors.
+        Warm water, gentle jets and comfortable seating may help support circulation, ease stiffness
+        and create a calmer end-of-day routine for many seniors.
       </div>
     </div>
 
@@ -983,12 +1134,12 @@
         <div class="card-tag">Hydrotherapy focus</div>
         <h3>Why hydrotherapy matters more as we age</h3>
         <p>
-          For many older adults, bath time is about more than getting clean. Warm water and gentle hydrotherapy can become 
+          For many older adults, bath time is about more than getting clean. Warm water and gentle hydrotherapy can become
           part of a daily or weekly routine that may help ease muscle tension, support relaxation and offer a moment of quiet in an otherwise busy day.
         </p>
         <p>
-          Researchers and health organizations have explored the potential of warm-water immersion and hydrotherapy to help with joint stiffness, 
-          soreness and general comfort for some people. We always recommend speaking with your doctor first to make sure hydrotherapy is appropriate 
+          Researchers and health organizations have explored the potential of warm-water immersion and hydrotherapy to help with joint stiffness,
+          soreness and general comfort for some people. We always recommend speaking with your doctor first to make sure hydrotherapy is appropriate
           for your specific health conditions.
         </p>
         <ul class="card-list">
@@ -997,7 +1148,8 @@
           <li>Options for air systems, water jets or combination systems, depending on what feels best for you.</li>
         </ul>
         <p class="mini-note">
-          Important: hydrotherapy tubs are not medical treatments. They may help support comfort and relaxation, but they do not replace guidance from your healthcare provider.
+          Important: hydrotherapy tubs are not medical treatments. They may help support comfort and relaxation,
+          but they do not replace guidance from your healthcare provider.
         </p>
       </div>
 
@@ -1048,14 +1200,16 @@
       <div class="two-col">
         <div>
           <p>
-            Good hydrotherapy walk in tubs for elderly are not just about the visible jets. Behind the shell, there are pumps, lines and controls that move and warm the water.
+            Good hydrotherapy walk in tubs for elderly are not just about the visible jets. Behind the shell,
+            there are pumps, lines and controls that move and warm the water.
           </p>
           <p>
-            At Aging Safely Baths, we work with manufacturers that test their tubs before they leave the factory. That can include filling the tub, 
-            running the jets and confirming that everything is functioning as intended before it arrives at your home.
+            At Aging Safely Baths, we work with manufacturers that test their tubs before they leave the factory.
+            That can include filling the tub, running the jets and confirming that everything is functioning as intended before it arrives at your home.
           </p>
           <p class="mini-note">
-            This type of quality check is part of what you are investing in when you choose a well-built hydrotherapy system instead of a basic, untested unit.
+            This type of quality check is part of what you are investing in when you choose a well-built hydrotherapy system
+            instead of a basic, untested unit.
           </p>
         </div>
         <div>
@@ -1091,7 +1245,7 @@
           <div class="card-tag">Step-by-step planning</div>
           <h3>How to start planning a walk in tub for elderly parents</h3>
           <p>
-            It can feel overwhelming to shop for walk in tubs when you are also worrying about a parent’s health and safety. 
+            It can feel overwhelming to shop for walk in tubs when you are also worrying about a parent’s health and safety.
             A simple planning process can help you move from “I don’t know where to start” to “we have a clear direction.”
           </p>
           <ul class="card-list">
@@ -1101,8 +1255,8 @@
             <li><strong>Step 4: Talk to your doctor.</strong> Ask if warm water and hydrotherapy may be appropriate and if any settings should be avoided.</li>
           </ul>
           <p style="margin-top:8px;">
-            To make this easier, you can also use the free 
-            <a href="https://walkintubs4less.com/pages/walk-in-tub-planner" target="_blank" rel="noopener">Walk-In Tub Planner</a> 
+            To make this easier, you can also use the free
+            <a href="https://walkintubs4less.com/pages/walk-in-tub-planner" target="_blank" rel="noopener">Walk-In Tub Planner</a>
             to organize measurements and questions before you talk with any company.
           </p>
         </div>
@@ -1110,7 +1264,7 @@
         <div class="strip">
           <h3>Small bathrooms and compact senior bathtubs</h3>
           <p>
-            Not every home has a big bathroom. Many older houses have narrow spaces and tight corners. 
+            Not every home has a big bathroom. Many older houses have narrow spaces and tight corners.
             Compact walk in tubs for elderly or front-entry senior bathtubs can help maximize safety even when space is limited.
           </p>
           <div class="two-col">
@@ -1160,7 +1314,7 @@
           <div class="card-tag">Material quality</div>
           <h3>Acrylic walk in tubs and why construction matters</h3>
           <p>
-            Many walk in tubs for elderly are made from high-quality acrylic over a strong support frame. 
+            Many walk in tubs for elderly are made from high-quality acrylic over a strong support frame.
             Material quality can influence how comfortable the tub feels, how easy it is to clean and how well it holds up over time.
           </p>
           <div class="img-card" style="margin-top:8px;">
@@ -1261,7 +1415,8 @@
           <li>Look at budget ranges for DIY delivery and turnkey installation paths.</li>
         </ul>
         <p class="cta-mini">
-          We can also help you prepare questions to ask your doctor about hydrotherapy, circulation and comfort to see whether a walk in tub aligns with their recommendations.
+          We can also help you prepare questions to ask your doctor about hydrotherapy, circulation and comfort
+          to see whether a walk in tub aligns with their recommendations.
         </p>
         <div class="hero-cta-row" style="margin-top:10px;">
           <a href="tel:1-888-779-2284" class="btn-primary">
@@ -1278,22 +1433,22 @@
           <div class="form-row">
             <div class="form-group">
               <label for="wte-name">Name</label>
-              <input type="text" id="wte-name" name="name" placeholder="Your name" required>
+              <input type="text" id="wte-name" name="user_name" placeholder="Your name" required>
             </div>
             <div class="form-group">
               <label for="wte-phone">Phone</label>
-              <input type="tel" id="wte-phone" name="phone" placeholder="Best phone number">
+              <input type="tel" id="wte-phone" name="user_phone" placeholder="Best phone number">
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group">
               <label for="wte-email">Email</label>
-              <input type="email" id="wte-email" name="email" placeholder="you@example.com" required>
+              <input type="email" id="wte-email" name="user_email" placeholder="you@example.com" required>
             </div>
             <div class="form-group">
               <label for="wte-zip">ZIP / Postal code</label>
-              <input type="text" id="wte-zip" name="zip" placeholder="ZIP or postal code">
+              <input type="text" id="wte-zip" name="user_zip" placeholder="ZIP or postal code">
             </div>
           </div>
 
@@ -1342,35 +1497,81 @@
 </main>
 
 <footer>
-  <div style="max-width:1140px; margin:0 auto;">
-    WalkInTubsForElderly.com is operated by Aging Safely Baths, a family-owned company focused on walk in tubs, senior bathtubs and accessible showers since 2012.
-    <br>
-    Learn more at 
-    <a href="https://www.agingsafelybaths.com/walk-in-tubs/" target="_blank" rel="noopener">AgingSafelyBaths.com – Walk In Tubs</a>
-    and
-    <a href="https://www.agingsafelybaths.com/handicap-showers/" target="_blank" rel="noopener">Handicap Showers</a>.
-    <br><br>
-    Call Toll Free: 1-888-779-2284
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-title">About WalkInTubsForElderly.com</div>
+        <p style="margin-top:4px;">
+          WalkInTubsForElderly.com is operated by <strong>Aging Safely Baths</strong>, a family-owned company focused on walk in tubs,
+          senior bathtubs and accessible showers since 2012.
+        </p>
+        <p style="margin-top:6px;">
+          Toll Free: <a href="tel:1-888-779-2284">1-888-779-2284</a><br>
+          Learn more at
+          <a href="https://www.agingsafelybaths.com/walk-in-tubs/" target="_blank" rel="noopener">AgingSafelyBaths.com – Walk In Tubs</a>
+          and
+          <a href="https://www.agingsafelybaths.com/handicap-showers/" target="_blank" rel="noopener">Handicap Showers</a>.
+        </p>
+      </div>
+
+      <div>
+        <div class="footer-title">On this site (HTML sitemap)</div>
+        <ul class="footer-links">
+          <li><a href="#home">Home – walk in tubs for elderly</a></li>
+          <li><a href="#why">Why walk in tubs</a></li>
+          <li><a href="#hydrotherapy">Hydrotherapy benefits</a></li>
+          <li><a href="#planning">Planning & tips</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#blog">Blog & learning center</a></li>
+          <li><a href="#contact">Request information</a></li>
+          <li><a href="sitemap.xml">XML sitemap</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-title">Other locations we serve</div>
+        <p style="margin-top:4px; margin-bottom:4px;">
+          Aging Safely Baths provides walk in tubs and accessible showers across many U.S. states, including:
+        </p>
+        <ul class="footer-locations">
+          <li><a href="https://www.agingsafelybaths.com/locations/texas-walk-in-tubs-roll-in-showers/" target="_blank" rel="noopener">Texas walk in tubs</a></li>
+          <li><a href="https://www.agingsafelybaths.com/locations/florida-walk-in-tubs-roll-in-showers/" target="_blank" rel="noopener">Florida walk in tubs</a></li>
+          <li><a href="https://www.agingsafelybaths.com/locations/colorado-walk-in-tubs-roll-in-showers/" target="_blank" rel="noopener">Colorado walk in tubs</a></li>
+          <li><a href="https://www.agingsafelybaths.com/locations/new-york-walk-in-tubs-roll-in-showers/" target="_blank" rel="noopener">New York walk in tubs</a></li>
+          <li><a href="https://www.agingsafelybaths.com/locations/california-walk-in-tubs-roll-in-showers/" target="_blank" rel="noopener">California walk in tubs</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      Educational content only and not a substitute for medical, legal or financial advice.
+      For personalized bath safety options, call <a href="tel:1-888-779-2284">1-888-779-2284</a>.
+    </div>
   </div>
 </footer>
 
-<!-- EmailJS or other handler wiring - replace with your actual IDs -->
+<!-- EmailJS wiring -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
-  /*
-  (function(){
-    emailjs.init("YOUR_PUBLIC_KEY_HERE");
+  (function() {
+    emailjs.init("alWutsHLG6c3h9P2j"); // your public key
   })();
 
-  document.getElementById('walkintubsforelderly-contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-      .then(function() {
-        alert('Thank you! Your message has been sent. An Aging Safely Baths representative will follow up shortly.');
-      }, function(error) {
-        alert('There was an issue sending your request. Please call 1-888-779-2284 or try again.');
-      });
-  });
-  */
+  const wteForm = document.getElementById('walkintubsforelderly-contact-form');
+  if (wteForm) {
+    wteForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      emailjs.sendForm('service_usimtub', 'template_5n0cskt', this)
+        .then(function() {
+          alert('Thank you! Your message has been sent. An Aging Safely Baths representative will follow up shortly.');
+          wteForm.reset();
+        }, function(error) {
+          console.error('EmailJS error:', error);
+          alert('There was an issue sending your request. Please call 1-888-779-2284 or try again.');
+        });
+    });
+  }
 </script>
 
 </body>
