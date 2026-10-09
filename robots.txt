@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.walkintubsforelderly.com/sitemap.xml
+Sitemap: https://walkintubsforelderly.com/sitemap.xml
