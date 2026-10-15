@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://walkintubsforelderly.com/</loc>
-    <lastmod>2026-10-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://walkintubsforelderly.com/blog-hydrotherapy-for-elderly.html</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://walkintubsforelderly.com/blog-walk-in-tub-features-for-elderly-parents.html</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://walkintubsforelderly.com/blog-helping-elderly-parent-bathe-safely.html</loc>
-    <lastmod>2026-10-09</lastmod>
-  </url>
+  <url><loc>https://walkintubsforelderly.com/</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://walkintubsforelderly.com/signs-bathing-is-unsafe/</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://walkintubsforelderly.com/talk-to-parent-about-bathroom-safety/</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://walkintubsforelderly.com/paying-for-a-walk-in-tub/</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://walkintubsforelderly.com/long-distance-caregiving/</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://walkintubsforelderly.com/family-decision-checklist/</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://walkintubsforelderly.com/blog-helping-elderly-parent-bathe-safely.html</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://walkintubsforelderly.com/blog-walk-in-tub-features-for-elderly-parents.html</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://walkintubsforelderly.com/blog-hydrotherapy-for-elderly.html</loc><lastmod>2026-10-15</lastmod></url>
 </urlset>
