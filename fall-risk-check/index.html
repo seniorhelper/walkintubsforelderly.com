@@ -83,7 +83,7 @@
 <li>Centers for Disease Control and Prevention, <a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6022a1.htm">Nonfatal Bathroom Injuries Among Persons Aged ≥15 Years, United States, 2008</a> (MMWR, 2011).</li>
 <li>U.S. Consumer Product Safety Commission, <a href="https://www.cpsc.gov/s3fs-public/5098.pdf">Avoiding Tap Water Scalds</a> (Publication 5098).</li></ol>
 <p class="updated">Checked October 17, 2026. The “what it means” notes and bathroom suggestions are ours, not the CDC’s.</p></section>
-<nav class="related" aria-label="Related guides"><h2>Keep going</h2><div class="cards"><a class="card" href="/signs-bathing-is-unsafe/"><h3>Warning signs</h3><p>What to watch for in how your parent bathes now.</p><p class="go">Read the guide</p></a><a class="card" href="/family-decision-checklist/"><h3>Family decision checklist</h3><p>Turn the score into a plan the whole family agrees on.</p><p class="go">Open the checklist</p></a></div></nav>
+<nav class="related" aria-label="Related guides"><h2>Keep going</h2><div class="cards"><a class="card" href="/signs-bathing-is-unsafe/"><h3>Warning signs</h3><p>What to watch for in how your parent bathes now.</p><p class="go">Read the guide</p></a><a class="card" href="/family-decision-checklist/"><h3>Family decision checklist</h3><p>Turn the score into a plan the whole family agrees on.</p><p class="go">Open the checklist</p></a><a class="card" href="/bathroom-prep-before-parent-comes-home-from-hospital/"><h3>Before a hospital discharge</h3><p>What to change in 48 hours and in two weeks before your parent comes home.</p><p class="go">Read the guide</p></a></div></nav>
 </div></main>
 <section class="ask" id="ask" aria-labelledby="ask-h"><div class="wrap ask-grid">
 <div>
@@ -128,6 +128,10 @@
 <div><h2>Family guides</h2><ul><li><a href="/">Family guide home</a></li><li><a href="/signs-bathing-is-unsafe/">Warning signs</a></li><li><a href="/talk-to-parent-about-bathroom-safety/">The conversation</a></li><li><a href="/paying-for-a-walk-in-tub/">Paying for it</a></li><li><a href="/long-distance-caregiving/">From a distance</a></li><li><a href="/family-decision-checklist/">Checklist</a></li><li><a href="/bathroom-safety-assessment/">Bathroom safety assessment</a></li></ul></div>
 <div><h2>More reading</h2><ul>
 <li><a href="/parent-refuses-to-bathe/">When a parent refuses to bathe</a></li>
+<li><a href="/holiday-visit-bathroom-safety-check/">Holiday visit bathroom check</a></li>
+<li><a href="/bathroom-prep-before-parent-comes-home-from-hospital/">Before a hospital discharge</a></li>
+<li><a href="/bathing-a-parent-with-dementia/">Bathing a parent with dementia</a></li>
+<li><a href="/moving-a-parent-into-your-home-bathroom-changes/">When a parent moves in</a></li>
 <li><a href="/blog-helping-elderly-parent-bathe-safely.html">Helping a parent bathe with dignity</a></li>
 <li><a href="/blog-walk-in-tub-features-for-elderly-parents.html">Tub features that matter to helpers</a></li>
 <li><a href="/blog-hydrotherapy-for-elderly.html">Are jets worth it for a parent?</a></li>
@@ -178,5 +182,6 @@ var st=document.getElementById('frc-steps');st.innerHTML=yes.length?'<p style="m
 items.forEach(function(li){li.querySelectorAll('button').forEach(function(btn){btn.addEventListener('click',function(){li.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed','false')});btn.setAttribute('aria-pressed','true');upd()})})});
 document.getElementById('frc-reset').addEventListener('click',function(){items.forEach(function(li){li.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed','false')})});upd()});
 document.getElementById('frc-print').addEventListener('click',function(){window.print()});
-document.getElementById('frc-copy').addEventListener('click',function(){var b=this,lines=['Fall risk check (CDC Stay Independent checklist): '+document.getElementById('frc-num').textContent+' points. 4 or more = may be at risk; talk to the doctor.'];items.forEach(function(li,i){var y=li.querySelector('.frc-yes').getAttribute('aria-pressed')==='true';if(y)lines.push('- Yes: '+li.querySelector('strong').textContent.replace(/^\d+\. /,''))});lines.push(location.href);var t=lines.join('\n');(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied'},function(){b.textContent='Copy not available'})});upd()})();</script></body>
+document.getElementById('frc-copy').addEventListener('click',function(){var b=this,lines=['Fall risk check (CDC Stay Independent checklist): '+document.getElementById('frc-num').textContent+' points. 4 or more = may be at risk; talk to the doctor.'];items.forEach(function(li,i){var y=li.querySelector('.frc-yes').getAttribute('aria-pressed')==='true';if(y)lines.push('- Yes: '+li.querySelector('strong').textContent.replace(/^\d+\. /,''))});lines.push(location.href);var t=lines.join('\n');(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied'},function(){b.textContent='Copy not available'})});upd()})();</script><script src="/lead-send.js" defer></script>
+</body>
 </html>
