@@ -33,6 +33,8 @@ This site covers the caregiver side of the decision: noticing warning signs, rai
 - Medicare Part B helps pay for medically necessary outpatient occupational therapy (20% coinsurance after the deductible). Under Medicare home health, covered services cost nothing, but occupational therapy must first be ordered with nursing, physical therapy or speech therapy (Medicare.gov, checked 2026-10-22).
 - NIA advises never leaving a person with Alzheimer's alone in the tub or shower, and suggests a bath or shower two or three times a week with sponge baths between (checked 2026-10-22).
 
+- [Privacy Policy](https://walkintubsforelderly.com/privacy/): How the site handles quote requests, calls and texts, Google Analytics and your choices.
+
 ## Safety language
 No bathing product removes the risk of a fall. Walk-in tubs and showers are designed to lower risk when installed and used properly.
 
