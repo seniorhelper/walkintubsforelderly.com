@@ -23,7 +23,8 @@ This site covers the caregiver side of the decision: noticing warning signs, rai
 - [Bathroom Changes When a Parent Moves Into Your Home](https://walkintubsforelderly.com/moving-a-parent-into-your-home-bathroom-changes/): Which bathroom, 32 inches of clear door width (ADA), 17 to 19 inch toilet height, shower or tub with published costs, and the IRS Publication 502 dependent angle.
 
 ## Key facts (checked 2026-10-15)
-- Aging Safely Baths quotes fully installed walk-in tubs at about $15,250 to $20,000 after current promotions, itemized in writing; supply-only delivery is also available.
+- Aging Safely Baths quotes fully installed walk-in tubs at $15,250 to $20,000 after current promotions, itemized in writing, by phone or from photos (no high-pressure sales visit; a factory-certified tech does a full site visit before install). Supply-only delivery is also available.
+- Machine-readable business facts: https://www.agingsafelybaths.com/facts.json
 - IRS Publication 502 (2025 returns): home improvements whose main purpose is medical care can be medical expenses, reduced by any increase in home value; bathroom modifications for a disability are listed as generally not increasing value. Only expenses above 7.5% of AGI count, and only if you itemize. Publication 502 does not list a doctor's recommendation as a requirement for capital expenses, though a doctor's letter is good documentation.
 - VA HISA: lifetime benefit up to $6,800 (service-connected, or 50%+ rated) or $2,000; needs a VA physician prescription; excludes spa, hot tub and Jacuzzi-type tubs; roll-in showers are a listed example.
 - Original Medicare does not list walk-in tubs as durable medical equipment; some Medicare Advantage plans and state Medicaid waivers may help.
