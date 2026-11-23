@@ -112,7 +112,7 @@
 </ul>
 <p>Prefer email? <a href="mailto:sales@agingsafelybaths.com">sales@agingsafelybaths.com</a>. Phones are answered 7am to 8pm Mountain time, 7 days a week.</p>
 </div>
-<form class="qform" id="qf" data-a="aW5mbw==" data-b="ZXlldG9hZC5jb20=" novalidate>
+<form class="qform" id="qf" novalidate>
 <h3>Ask a question or request a quote</h3>
 <p>A specialist will call you back, usually within one business day.</p>
 <div class="fgrid">
@@ -125,8 +125,6 @@
 </div>
 <div class="hp" aria-hidden="true"><label for="qf-hp">Leave this empty</label><input id="qf-hp" name="_honey" tabindex="-1" autocomplete="off"></div>
 <input type="hidden" name="_subject" value="New family inquiry - walkintubsforelderly.com">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="page" value="">
 <button class="btn btn-red" type="submit">Send my question</button>
 <p class="fstatus" role="status" aria-live="polite"></p>
@@ -161,7 +159,6 @@ var b=document.getElementById('burger'),n=document.getElementById('mobNav');
 if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.textContent=o?'Close':'Menu';});}
 var t0=Date.now(),human=false;function mark(){human=true}
 ['keydown','pointerdown','touchstart','input'].forEach(function(e){window.addEventListener(e,mark,{once:true,passive:true,capture:true})});
-function dec(s){try{return atob(s)}catch(e){return ''}}
 document.querySelectorAll('form.qform').forEach(function(f){
  var pg=f.querySelector('input[name=page]');if(pg)pg.value=location.href;
  var busy=false;
@@ -177,11 +174,12 @@ document.querySelectorAll('form.qform').forEach(function(f){
   var ph=f.querySelector('input[name=phone]');
   if(ph&&ph.value.replace(/\D/g,'').length<10){say('err','Please enter a 10-digit phone number so we can call you back.');ph.focus();return}
   busy=true;btn.disabled=true;btn.textContent='Sending...';
-  var url='https://formsubmit.co/ajax/'+dec(f.getAttribute('data-a'))+String.fromCharCode(64)+dec(f.getAttribute('data-b'));
-  fetch(url,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
-  .then(function(r){return r.json().catch(function(){return {}})})
+  var fd=new FormData(f);fd.delete('_honey');fd.append('site',location.hostname.replace(/^www./,''));fd.append('_t',String(t0));
+  function lead(){return fetch('https://clients.eyetoad.com/lead/send.php',{method:'POST',body:fd,headers:{'Accept':'application/json'},credentials:'omit',referrerPolicy:'strict-origin-when-cross-origin'}).then(function(r){return r.json().catch(function(){return {}}).then(function(j){if(r.ok&&j&&j.ok===true)return j;throw new Error('lead '+r.status)})})}
+  lead().catch(function(){return new Promise(function(z){setTimeout(z,1200)}).then(lead)})
+  .then(function(){if(window.gtag){try{window.gtag('event','generate_lead',{form_id:f.id})}catch(e){}}return {ok:true}})
   .then(function(j){
-   if(j&&String(j.success)==='true'){say('ok','Thank you. Your question is in, and a specialist will call you soon. Need us sooner? Call 1-888-779-2284.');f.reset();}
+   if(j&&j.ok===true){say('ok','Thank you. Your question is in, and a specialist will call you soon. Need us sooner? Call 1-888-779-2284.');f.reset();}
    else{say('warn','We may not have received this. Please call 1-888-779-2284 so we can help you right away.');}
   })
   .catch(function(){say('err','Your message could not be sent. Please call 1-888-779-2284 and we will help by phone.');})
